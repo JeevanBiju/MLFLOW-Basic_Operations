@@ -1,0 +1,15 @@
+artifact_uri: file:///e:/works/MLOps/mlruns/0/4b339db0b1854b71b9d6819b3faac573/artifacts
+end_time: 1725110726741
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4b339db0b1854b71b9d6819b3faac573
+run_name: thoughtful-snail-374
+run_uuid: 4b339db0b1854b71b9d6819b3faac573
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1725110720458
+status: 3
+tags: []
+user_id: jeeva
