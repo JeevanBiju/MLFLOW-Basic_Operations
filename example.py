@@ -67,9 +67,7 @@ if __name__ == "__main__":
         print("  RMSE: %s" % rmse)
         print("  MAE: %s" % mae)
         print("  R2: %s" % r2)
-
-
-        
+       
 
         mlflow.log_param("alpha", alpha)
         mlflow.log_param("l1_ratio", l1_ratio)
@@ -77,8 +75,10 @@ if __name__ == "__main__":
         mlflow.log_metric("r2", r2)
         mlflow.log_metric("mae", mae)
 
+        remote_server_uri = "http://ec2-54-173-17-44.compute-1.amazonaws.com:5000/"
+        mlflow.set_tracking_uri(remote_server_uri) 
+        
         tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
-
         # Model registry does not work with file store
         if tracking_url_type_store != "file":
 
